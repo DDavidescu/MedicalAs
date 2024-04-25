@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedicalAs - Blog</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- FONT LINKS  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS STYLING -->
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        #main-section {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: #e0e0e0; 
+        }
+
+        .post {
+            display: flex;
+            max-width: 800px;
+            margin: 20px auto;
+            border: 3px solid #B22222;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .post:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .post img {
+            margin: auto 0;
+            width: 300px;
+            height: 250px;;
+            display: block;
+            border: 1px solid #CCCCCC;
+            border-radius: 5%;
+        }
+
+        .blog-content {
+            box-sizing: border-box;
+            margin: auto auto;
+            line-height: 1.2;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .blog-content h2 { 
+            font-family: 'Montserrat', Times, serif;
+            text-align: center;
+        }
+
+        .blog-content h2:hover {
+            color: #B22222
+        }
+
+        .blog-content p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1em;
+            padding: 0px;
+            margin: 0;
+        }
+
+        .post a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .buton {
+            text-align: center;
+        }
+
+        a.buton-descopera {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #ff5858;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s ease;
+            margin-top: 15px;
+        } 
+
+        .buton-descopera:hover {
+            background-color: #B22222;
+        }
+
+        /* MEDIA QUERY */
+
+        @media only screen and (max-width: 768px) {
+            .post {
+        flex-direction: column; 
+        max-width: calc(100% - 10px);
+        margin: 50px 10px;
+        }
+
+
+        .post img {
+        width: 100%; 
+        max-width: none; 
+        border-radius: 5%;
+        }
+
+        .blog-content {
+        text-align: center; 
+        margin-top: 15px;
+        }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+    <!-- NAV BAR -->
+    <nav>
+        <div class="logo"><a href="index.html"><img id="logo-top-left" src="./images/logo.png" alt="logo MedicalAs" width="120"></a></div>
+        <button class="mobile-menu-button">&#9776; Meniu</button>
+        <ul class="nav-links">
+            <a href="index.html"><li>Acasă</li></a>
+            <a href="services.html"><li>Servicii</li></a>
+            <a href="preturi.html"><li>Prețuri</li></a>
+            <a href="blog.html"><li>Blog</li></a>
+            <a href="contact.html" id="contact"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main id="main-section">
+        <!-- Blog Post 1 -->
+        <article class="post" id="post1">
+            <a href="https://m.facebook.com/story.php?story_fbid=pfbid0AgRJg4QUZ2EeYhUpTQzp3AuSsfVoNpoH5sHHh8XhbNNGog97kV82kU3htPYAKwfXl&id=100088809708240">
+                <img src="./images/terapia biofotonica.jpg" alt="terapia biofotonica transcraniana">
+            </a>
+            <div class="blog-content">
+
+            <a href="https://m.facebook.com/story.php?story_fbid=pfbid0AgRJg4QUZ2EeYhUpTQzp3AuSsfVoNpoH5sHHh8XhbNNGog97kV82kU3htPYAKwfXl&id=100088809708240">
+                <h2>Terapia Biofotonică Transcraniană</h2>
+            </a>
+            <p>Emisie concentrată pentru sănătate mentală.</p>
+                <div class="buton">
+                    <a href="https://m.facebook.com/story.php?story_fbid=pfbid0AgRJg4QUZ2EeYhUpTQzp3AuSsfVoNpoH5sHHh8XhbNNGog97kV82kU3htPYAKwfXl&id=100088809708240" class="buton-descopera">Descoperă Mai Mult</a>
+                </div>  
+            </div>
+        </article>
+
+        <!-- Blog Post 2 -->
+        <article class="post" id="post2">
+            <a href="https://m.facebook.com/story.php?story_fbid=pfbid0AK1oeLUebPRNr6kp6YtnrXwgvPDJjcC6h21s8XtKZQmSs1sj5sMKFwdvVo4jUuivl&id=100088809708240">
+                <img src="./images/biofeedback.png" alt="biofeedback">
+            </a>
+            <div class="blog-content">
+
+            <a href="https://m.facebook.com/story.php?story_fbid=pfbid0AK1oeLUebPRNr6kp6YtnrXwgvPDJjcC6h21s8XtKZQmSs1sj5sMKFwdvVo4jUuivl&id=100088809708240">
+                <h2>Biofeedback</h2>
+            </a>
+            <p>Măsurare și îmbunătățirea funcțiilor corpului tău.</p>
+                <div class="buton">
+                    <a href="https://m.facebook.com/story.php?story_fbid=pfbid0AK1oeLUebPRNr6kp6YtnrXwgvPDJjcC6h21s8XtKZQmSs1sj5sMKFwdvVo4jUuivl&id=100088809708240" class="buton-descopera">Descoperă Mai Mult</a>
+                </div>  
+            </div>
+        </article>
+
+        <!-- Blog Post 3 -->
+        <article class="post" id="post3">
+            <a href="https://m.facebook.com/story.php?story_fbid=pfbid037Vdk2hbUtQ7561KZbm9BWwyvmLPASPtMXXebd76EGzZxEfUScLNAWqjCxYXuDt7fl&id=100088809708240">
+                <img src="./images/glutathione.png" alt="glutathione">
+            </a>
+            <div class="blog-content">
+
+            <a href="https://m.facebook.com/story.php?story_fbid=pfbid037Vdk2hbUtQ7561KZbm9BWwyvmLPASPtMXXebd76EGzZxEfUScLNAWqjCxYXuDt7fl&id=100088809708240">
+                <h2>Glutationul</h2>
+            </a>
+            <p>Antioxidant puternic pentru sănătate optimă.</p>
+                <div class="buton">
+                    <a href="https://m.facebook.com/story.php?story_fbid=pfbid037Vdk2hbUtQ7561KZbm9BWwyvmLPASPtMXXebd76EGzZxEfUScLNAWqjCxYXuDt7fl&id=100088809708240" class="buton-descopera">Descoperă Mai Mult</a>
+                </div>  
+            </div>
+        </article>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-section-contact">
+                <h3>Contact</h3>
+                <p>Adresă: Str. George Enescu nr.34, Ap.1, Sector 1</p>
+                <p>Telefon: <a href="tel:+40730029288" class="contact-button">+40730029288</a></p>
+                <p>Email: <a href="mailto:office@medicalas.ro">office@medicalas.ro</a></p>
+                <a href="https://www.facebook.com/people/TERRA-Medical-As/100088809708240/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                    <defs>
+                      <linearGradient id="fbGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+                        <stop offset="0%" style="stop-color:#39579A;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#1877f2;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M22 2H2a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h11.31v-7.01h-3V9.76h3V7.34c0-3.14 1.91-4.84 4.7-4.84 1.33 0 2.47.1 2.8.15v3h-1.92c-1.5 0-1.79.71-1.79 1.76v2.3h3.59l-.47 3.54h-3.11V22H22a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" fill="url(#fbGradient)"/>
+                  </svg>
+                </a>
+                  
+                
+            </div>
+
+            <div class="footer-section-servicii">
+                <h3>Servicii</h3>
+                <ul class="footer-links">
+                    <li><a href="perfuzie-intravenoasa.html">Perfuzie intravenoasă</a></li>
+                    <li><a href="ingrijirea-escarelor.html">Îngrijirea escarelor</a></li>
+                    <li><a href="recoltarea-analizelor-de-sange.html">Recoltarea analizelor de sânge</a></li>
+                    <li><a href="administrarea-medicamentelor.html">Administrarea medicamentelor</a></li>
+                    <li><a href="masaj.html">Masaj</a></li>
+                    <li><a href="psihoterapie.html">Psihoterapie</a></li>
+                    <li><a href="pansamentul-plagilor.html">Pansamentul plăgilor</a></li>
+                    <li><a href="ingrijirea-stomelor.html">Îngrijirea stomelor</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>Terra MedicalAs srl &copy; 2022. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

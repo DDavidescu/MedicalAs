@@ -1,0 +1,266 @@
+<!-- services.html -->
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedicalAs - Servicii</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+
+body { 
+    background-color: #e0e0e0;
+}
+
+.services-page {
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 120px;
+}
+
+.services-page h2 {
+    color: black;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.services-header { 
+    font-size: 2.5em;
+    color: white; 
+    background-color: #e0e0e0; 
+    padding: 30px 20px; 
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px; 
+}
+
+.services-container-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.service-page {
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #ff5858;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-page img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#services-header-page {
+    color: black;
+    font-size: 2.5em;
+    margin-bottom: 20px; 
+    text-align: center; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    letter-spacing: 2px; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.service-page h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    
+}
+
+.service-page p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 15px;
+}
+
+.service-page a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5858;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.service-page a:hover {
+    background-color: #B22222;
+}
+
+.service-page:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+    transform: translateY(-5px);
+}
+
+
+    </style>
+</head>
+
+<body>
+    
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+    <!-- NAV BAR -->
+    <nav>
+        <div class="logo"><a href="index.html"><img id="logo-top-left" src="./images/logo.png" alt="logo MedicalAs" width="120"></a></div>
+        <button class="mobile-menu-button">&#9776; Meniu</button>
+        <ul class="nav-links">
+            <a href="index.html"><li>Acasă</li></a>
+            <a href="services.html"><li>Servicii</li></a>
+            <a href="preturi.html"><li>Prețuri</li></a>
+            <a href="blog.html"><li>Blog</li></a>
+            <a href="contact.html" id="contact"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    <!-- SERVICES SECTION -->
+    
+    <section class="services-page">
+        <h2 class="services-header">Serviciile Noastre</h2>
+
+        <div class="services-container-page">
+            <div class="service-page">
+                <img src="./images/logo servicii.png" alt="Perfuzie intravenoasă">
+                <h2 class="service-header">Perfuzie intravenoasă</h2>
+                <p class="service-description">Terapie intravenoasă la domiciliu: Confort, Siguranță, Conveniență.</p>
+                <a href="perfuzie-intravenoasa.html" class="service-link">Detalii</a>
+            </div>
+
+            <div class="service-page">
+                <img src="./images/logo servicii.png" alt="Ingrijirea escalelor">
+                <h2 class="service-header">Ingrijirea escarelor</h2>
+                <p class="service-description">Prevenire și tratament eficient al escarelor.</p>
+                <a href="ingrijirea-escarelor.html" class="service-link">Detalii</a>
+            </div>
+
+            <div class="service-page">
+                <img src="./images/logo servicii.png" alt="Recoltarea analizelor de sange">
+                <h2 class="service-header">Recoltarea analizelor de sânge</h2>
+                <p class="service-description">Analizele de sânge: importanța și pregătirea necesară.</p>
+                <a href="recoltarea-analizelor-de-sange.html" class="service-link">Detalii</a>
+            </div>
+
+            <div class="service-page">
+                <img src="./images/logo servicii.png" alt="Administrarea medicamentelor">
+                <h2 class="service-header">Administrarea medicamentelor</h2>
+                <p class="service-description">Administrare substanțelor în organism: căi și efecte.</p>
+                <a href="administrarea-medicamentelor.html" class="service-link">Detalii</a>
+            </div>
+
+            <div class="service-page">
+                <img src="./images/logo servicii.png" alt="Masaj">
+                <h2 class="service-header">Masaj</h2>
+                <p class="service-description">Pentru vitalitate și relaxare.</p>
+                <a href="masaj.html" class="service-link">Detalii</a>
+            </div>
+
+            <div class="service-page">
+                <img src="./images/logo servicii.png" alt="Psihoterapie">
+                <h2 class="service-header">Psihoterapie</h2>
+                <p class="service-description">Arta vindecării prin relație terapeutică.</p>
+                <a href="psihoterapie.html" class="service-link">Detalii</a>
+            </div>
+
+            <div class="service-page">
+                <img src="./images/logo servicii.png" alt="Pansamentul plagilor">
+                <h2 class="service-header">Pansamentul plăgilor</h2>
+                <p class="service-description">Protecția eficientă a plăgilor prin intervenții adecvate.</p>
+                <a href="pansamentul-plagilor.html" class="service-link">Detalii</a>
+            </div>
+
+            <div class="service-page">
+                <img src="./images/logo servicii.png" alt="Ingrijirea stomelor">
+                <h2 class="service-header">Îngrijirea stomelor</h2>
+                <p class="service-description">Pregătire și îngrijire stome: confort și sănătate.</p>
+                <a href="ingrijirea-stomelor.html" class="service-link">Detalii</a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- RESERVATION SECTION -->
+    <section class="reservation">
+        <div class="reservation-container">
+            <h2>Rezervați acum pentru serviciile noastre de înaltă calitate!</h2>
+            <p>Sună la numărul nostru de telefon pentru a programa o consultație sau pentru orice întrebare legată de serviciile noastre de îngrijire medicală.</p>
+            <div class="button-container">
+                <a href="tel:+123456789" class="reservation-button">
+                    <span class="primary-text">Sunați acum</span>
+                    <span class="secondary-text">+40730029288</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-section-contact">
+                <h3>Contact</h3>
+                <p>Adresă: Str. George Enescu nr.34, Ap.1, Sector 1</p>
+                <p>Telefon: <a href="tel:+40730029288" class="contact-button">+40730029288</a></p>
+                <p>Email: <a href="mailto:office@medicalas.ro">office@medicalas.ro</a></p>
+                <a href="https://www.facebook.com/people/TERRA-Medical-As/100088809708240/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                    <defs>
+                      <linearGradient id="fbGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+                        <stop offset="0%" style="stop-color:#39579A;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#1877f2;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M22 2H2a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h11.31v-7.01h-3V9.76h3V7.34c0-3.14 1.91-4.84 4.7-4.84 1.33 0 2.47.1 2.8.15v3h-1.92c-1.5 0-1.79.71-1.79 1.76v2.3h3.59l-.47 3.54h-3.11V22H22a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" fill="url(#fbGradient)"/>
+                  </svg>
+                </a>
+                  
+                
+            </div>
+
+            <div class="footer-section-servicii">
+                <h3>Servicii</h3>
+                <ul class="footer-links">
+                    <li><a href="perfuzie-intravenoasa.html">Perfuzie intravenoasă</a></li>
+                    <li><a href="ingrijirea-escarelor.html">Îngrijirea escarelor</a></li>
+                    <li><a href="recoltarea-analizelor-de-sange.html">Recoltarea analizelor de sânge</a></li>
+                    <li><a href="administrarea-medicamentelor.html">Administrarea medicamentelor</a></li>
+                    <li><a href="masaj.html">Masaj</a></li>
+                    <li><a href="psihoterapie.html">Psihoterapie</a></li>
+                    <li><a href="pansamentul-plagilor.html">Pansamentul plăgilor</a></li>
+                    <li><a href="ingrijirea-stomelor.html">Îngrijirea stomelor</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>Terra MedicalAs srl &copy; 2022. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

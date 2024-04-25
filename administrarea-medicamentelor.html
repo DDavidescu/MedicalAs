@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrarea Medicamentelor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        #medicine-administration-section {
+            background-color: #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            margin: 20px;
+        }
+
+        #medicine-administration-section:hover { 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .medicine-administration-info {
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .medicine-administration-info p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .medicine-administration-info h2 {
+            color: #B22222;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .medicine-administration-details {
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+    <!-- NAV BAR -->
+    <nav>
+        <div class="logo"><a href="index.html"><img id="logo-top-left" src="./images/logo.png" alt="logo MedicalAs" width="120"></a></div>
+        <button class="mobile-menu-button">&#9776; Meniu</button>
+        <ul class="nav-links">
+            <a href="index.html"><li>Acasă</li></a>
+            <a href="services.html"><li>Servicii</li></a>
+            <a href="preturi.html"><li>Prețuri</li></a>
+            <a href="blog.html"><li>Blog</li></a>
+            <a href="contact.html" id="contact"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    <!-- MEDICINE ADMINISTRATION SECTION -->
+    <section id="medicine-administration-section">
+    <div class="medicine-administration-info">
+        <h2>Administrarea Medicamentelor</h2>
+        <p>
+            Calea de administrare (denumită și mod de administrare) este, în farmacologie și toxicologie,
+            calea pe care este administrată în organism o substanță medicamentoasă sau o substanță toxică.
+            Acestea sunt adesea clasificate în funcție de locul în care substanța este aplicată.
+        </p>
+    </div>
+
+    <div class="medicine-administration-details">
+        <p>
+            De exemplu, administrarea se poate face pe cale orală, topică sau intravenoasă.
+            Drumul pe care îl parcurge substanța de la locul de administrare pe o anumită cale și
+            până la ținta moleculară pe care ea acționează este subiectul științei denumită farmacocinetică
+            (absorbție, distribuție, metabolizare și eliminare). De asemenea, localizarea țintei moleculare
+            ține de știința denumită farmacodinamică.
+        </p>
+    </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-section-contact">
+                <h3>Contact</h3>
+                <p>Adresă: Str. George Enescu nr.34, Ap.1, Sector 1</p>
+                <p>Telefon: <a href="tel:+40730029288" class="contact-button">+40730029288</a></p>
+                <p>Email: <a href="mailto:office@medicalas.ro">office@medicalas.ro</a></p>
+                <a href="https://www.facebook.com/people/TERRA-Medical-As/100088809708240/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                    <defs>
+                      <linearGradient id="fbGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+                        <stop offset="0%" style="stop-color:#39579A;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#1877f2;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M22 2H2a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h11.31v-7.01h-3V9.76h3V7.34c0-3.14 1.91-4.84 4.7-4.84 1.33 0 2.47.1 2.8.15v3h-1.92c-1.5 0-1.79.71-1.79 1.76v2.3h3.59l-.47 3.54h-3.11V22H22a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" fill="url(#fbGradient)"/>
+                  </svg>
+                </a>
+                  
+                
+            </div>
+
+            <div class="footer-section-servicii">
+                <h3>Servicii</h3>
+                <ul class="footer-links">
+                    <li><a href="perfuzie-intravenoasa.html">Perfuzie intravenoasă</a></li>
+                    <li><a href="ingrijirea-escarelor.html">Îngrijirea escarelor</a></li>
+                    <li><a href="recoltarea-analizelor-de-sange.html">Recoltarea analizelor de sânge</a></li>
+                    <li><a href="administrarea-medicamentelor.html">Administrarea medicamentelor</a></li>
+                    <li><a href="masaj.html">Masaj</a></li>
+                    <li><a href="psihoterapie.html">Psihoterapie</a></li>
+                    <li><a href="pansamentul-plagilor.html">Pansamentul plăgilor</a></li>
+                    <li><a href="ingrijirea-stomelor.html">Îngrijirea stomelor</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>Terra MedicalAs srl &copy; 2022. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

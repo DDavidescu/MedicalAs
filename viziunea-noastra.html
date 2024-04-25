@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedicalAs - Viziunea noastră</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- CSS -->
+    <style>
+
+        body {
+            font-size: 1em;
+            background-color: #f9f9f9;
+            overflow-x: hidden; 
+        }
+
+        #vision,
+        #team {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 30px; /* Reduced margin */
+            padding: 20px;
+            
+        }
+
+        #vision img,
+        #team img {
+            margin-right: 10px; /* Reduced margin */
+            border-radius: 5%;
+            max-width: 100%; /* Adjusted image width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        #vision p,
+        #team p {
+            max-width: 500px;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        #vision h2,
+        #team h2 {
+            color: #b22222;
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #vision { 
+            opacity: 0;
+            transform: translateX(-10%);
+            animation: slideIn 1.2s ease-out forwards;
+        }
+
+        #team {
+            display: flex;
+            flex-direction: row-reverse; 
+            opacity: 0; /* Initially set opacity to 0 for the animation */
+            transform: translateX(100%); /* Initially move the element to the right */
+            transition: opacity 1s, transform 1.5s; /* Transition properties */
+        }
+
+        #team.in-view {
+            opacity: 1; /* Set opacity to 1 when in view */
+            transform: translateX(0); /* Move the element to its original position */
+        }
+
+        .reservation {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 1s, transform 1s;
+        }
+
+        .reservation.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 1200px) {
+    #vision,
+    #team {
+        flex-direction: column; /* Change to a single column layout for screens under 1200px */
+        justify-content: center; /* Center align items vertically */
+        align-items: center; /* Center align items horizontally */
+        text-align: center; /* Center align text */
+    }
+
+    #vision img,
+    #team img {
+        max-width: 80%; /* Adjust image width */
+    }
+
+    #vision div,
+    #team div {
+        max-width: 80%; /* Adjust text width */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #vision h2, #team h2 {
+        font-size: 2rem;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+    <!-- NAV BAR -->
+    <nav>
+        <div class="logo"><a href="index.html"><img id="logo-top-left" src="./images/logo.png" alt="logo MedicalAs" width="120"></a></div>
+        <button class="mobile-menu-button">&#9776; Meniu</button>
+        <ul class="nav-links">
+            <a href="index.html"><li>Acasă</li></a>
+            <a href="services.html"><li>Servicii</li></a>
+            <a href="preturi.html"><li>Prețuri</li></a>
+            <a href="blog.html"><li>Blog</li></a>
+            <a href="contact.html" id="contact"><li>Contact</li></a>
+        </ul>
+    </nav>
+    
+    <!-- VIZIUNEA NOASTRA CONTENT -->
+    <section id="vision">
+        <img src="./images/holding-hands.png" alt="Image 1" width="600px">
+        <div>
+            <h2>Viziunea Noastră</h2>
+            <p>În perspectivă clinică, boala nu se reduce la simpla enumerare a simptomelor sau a plângerilor somatice. Ea reprezintă un proces care, mai presus de toate, influențează viața psihică a pacientului ca reacție la boală. Diagnosticul certifică starea de boală și conduce la dezvoltarea unui comportament structurat în jurul acelei condiții.</p>
+            <p>Există afecțiuni care se vindecă natural în timp, boli care necesită un set de tratamente pentru a pune capăt problemelor medicale, și boli care, în ciuda eforturilor, nu pot fi vindecate. În aceste cazuri, terapia durerii și îngrijirile paliative preiau controlul.</p>
+        </div>
+    </section>
+
+    <section id="team">
+        <img src="./images/plimbare.png" alt="Image 2" width="600px">
+        <div>
+            <h2>Echipa MedicalAs</h2>
+            <p>Echipa MedicalAs dorește să fie sprijinul și însoțitorul dumneavoastră pe parcursul căii spre vindecare, oferind servicii de îngrijiri medicale la domiciliu. Astfel, veți beneficia de confortul propriului cămin, de intimitate, evitând deplasările în aglomerația orașului și reducând riscul de infectare în mediul spitalicesc, în special în cazurile de suferință severă.</p>
+            <p>Echipa noastră, este la dispoziția dumneavoastră cu empatie, profesionalism și atenție la detalii dobândite în decursul anilor de dedicare. Ne dorim să contribuim la îmbunătățirea stării dumneavoastră de sănătate, întrucât înțelegem că sănătatea înseamnă totul.</p>
+        </div>    
+    </section>
+
+
+    <!-- RESERVATION SECTION -->
+    <section class="reservation">
+        <div class="reservation-container">
+            <h2>Rezervați acum pentru serviciile noastre de înaltă calitate!</h2>
+            <p>Sună la numărul nostru de telefon pentru a programa o consultație sau pentru orice întrebare legată de serviciile noastre de îngrijire medicală.</p>
+            <div class="button-container">
+                <a href="tel:+123456789" class="reservation-button">
+                    <span class="primary-text">Sunați acum</span>
+                    <span class="secondary-text">+40730029288</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-section-contact">
+                <h3>Contact</h3>
+                <p>Adresă: Str. George Enescu nr.34, Ap.1, Sector 1</p>
+                <p>Telefon: <a href="tel:+40730029288" class="contact-button">+40730029288</a></p>
+                <p>Email: <a href="mailto:office@medicalas.ro">office@medicalas.ro</a></p>
+                <a href="https://www.facebook.com/people/TERRA-Medical-As/100088809708240/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                    <defs>
+                      <linearGradient id="fbGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+                        <stop offset="0%" style="stop-color:#39579A;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#1877f2;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M22 2H2a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h11.31v-7.01h-3V9.76h3V7.34c0-3.14 1.91-4.84 4.7-4.84 1.33 0 2.47.1 2.8.15v3h-1.92c-1.5 0-1.79.71-1.79 1.76v2.3h3.59l-.47 3.54h-3.11V22H22a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" fill="url(#fbGradient)"/>
+                  </svg>
+                </a>
+                  
+                
+            </div>
+
+            <div class="footer-section-servicii">
+                <h3>Servicii</h3>
+                <ul class="footer-links">
+                    <li><a href="perfuzie-intravenoasa.html">Perfuzie intravenoasă</a></li>
+                    <li><a href="ingrijirea-escarelor.html">Îngrijirea escarelor</a></li>
+                    <li><a href="recoltarea-analizelor-de-sange.html">Recoltarea analizelor de sânge</a></li>
+                    <li><a href="administrarea-medicamentelor.html">Administrarea medicamentelor</a></li>
+                    <li><a href="masaj.html">Masaj</a></li>
+                    <li><a href="psihoterapie.html">Psihoterapie</a></li>
+                    <li><a href="pansamentul-plagilor.html">Pansamentul plăgilor</a></li>
+                    <li><a href="ingrijirea-stomelor.html">Îngrijirea stomelor</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>Terra MedicalAs srl &copy; 2022. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

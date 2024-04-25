@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedicalAs - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+
+.contact {
+    /* background-color: #f8f8f8; */
+    background-color: #e0e0e0;
+    padding: 50px 0;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5858; 
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: 0.3s ease;
+}
+
+.contact-button:hover { 
+    background-color: #B22222; 
+}
+        
+#google-maps-contact {
+    margin-top: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #B22222;
+}
+
+#google-maps-contact iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-container {
+        padding: 20px; 
+    }
+
+    .contact-container h2 {
+        font-size: 2.5em;
+    }
+
+    .contact-info,
+    .contact-buttons {
+        text-align: center; 
+        margin-bottom: 15px; 
+    }
+
+    
+    #google-maps-contact {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; 
+    }
+
+    #google-maps-contact iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+    <!-- NAV BAR -->
+    <nav>
+        <div class="logo"><a href="index.html"><img id="logo-top-left" src="./images/logo.png" alt="logo MedicalAs" width="120"></a></div>
+        <button class="mobile-menu-button">&#9776; Meniu</button>
+        <ul class="nav-links">
+            <a href="index.html"><li>Acasă</li></a>
+            <a href="services.html"><li>Servicii</li></a>
+            <a href="preturi.html"><li>Prețuri</li></a>
+            <a href="blog.html"><li>Blog</li></a>
+            <a href="contact.html" id="contact"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+        <div class="contact-container">
+            <h2>Contactează-ne</h2>
+            <p>Pentru orice întrebări sau programări, sună-ne sau trimite-ne un mesaj:</p>
+
+            <div class="contact-info">
+                <p>Adresă: Str George Enescu nr.34, Ap.1, Sector 1</p>
+                <p>Telefon: +40730029288</p>
+                <p>Email: office@medicalas.ro</p>
+            </div>
+
+            <div class="contact-buttons">
+                <a href="tel:+40730029288" class="contact-button reservation-button">
+                    <span>Sunați acum</span>
+                </a>
+                <a href="mailto:office@medicalas.ro" class="contact-button reservation-button">Trimiteți un email</a>
+            </div>
+
+            <!-- Google Maps Embed (Replace with your own map iframe code) -->
+            <div id="google-maps-contact">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.459411030942!2d26.097244906950323!3d44.4442500909172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff4e6f882213%3A0x40bee8235aa9561!2sStrada%20George%20Enescu%2034%2C%20Bucure%C8%99ti%20010307!5e0!3m2!1sen!2sro!4v1705025290875!5m2!1sen!2sro" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-section-contact">
+                <h3>Contact</h3>
+                <p>Adresă: Str. George Enescu nr.34, Ap.1, Sector 1</p>
+                <p>Telefon: <a href="tel:+40730029288">+40730029288</a></p>
+                <p>Email: <a href="mailto:office@medicalas.ro">office@medicalas.ro</a></p>
+                <a href="https://www.facebook.com/people/TERRA-Medical-As/100088809708240/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                    <defs>
+                      <linearGradient id="fbGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+                        <stop offset="0%" style="stop-color:#39579A;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#1877f2;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M22 2H2a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h11.31v-7.01h-3V9.76h3V7.34c0-3.14 1.91-4.84 4.7-4.84 1.33 0 2.47.1 2.8.15v3h-1.92c-1.5 0-1.79.71-1.79 1.76v2.3h3.59l-.47 3.54h-3.11V22H22a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" fill="url(#fbGradient)"/>
+                  </svg>
+                </a>
+                  
+                
+            </div>
+
+            <div class="footer-section-servicii">
+                <h3>Servicii</h3>
+                <ul class="footer-links">
+                    <li><a href="perfuzie-intravenoasa.html">Perfuzie intravenoasă</a></li>
+                    <li><a href="ingrijirea-escarelor.html">Îngrijirea escarelor</a></li>
+                    <li><a href="recoltarea-analizelor-de-sange.html">Recoltarea analizelor de sânge</a></li>
+                    <li><a href="administrarea-medicamentelor.html">Administrarea medicamentelor</a></li>
+                    <li><a href="masaj.html">Masaj</a></li>
+                    <li><a href="psihoterapie.html">Psihoterapie</a></li>
+                    <li><a href="pansamentul-plagilor.html">Pansamentul plăgilor</a></li>
+                    <li><a href="ingrijirea-stomelor.html">Îngrijirea stomelor</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>Terra MedicalAs srl &copy; 2022. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

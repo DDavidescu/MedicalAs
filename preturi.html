@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedicalAs - Pachete și Prețuri</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0; 
+            font-size: 1rem;
+        }
+
+        #pricing-section-header {
+            font-size: 2rem;
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+            color: #555555;
+            margin-bottom: 0px;
+        }
+
+        .pricing-section {
+            display: flex;
+            padding: 20px 20px 0px 20px;
+            gap: 20px;
+        }
+
+        .pricing-package {
+            background-color: #EFEFEF;
+            border: 2px solid #B22222;
+            border-radius: 5px;
+            padding: 60px 0px;
+            margin: 20px 0;
+            width: 70%;
+            text-align: center;
+            box-sizing: border-box;
+            transition: 0.3s ease-in-out;
+        }
+
+        .pricing-package:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .pricing-package h2 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .pricing-details {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .pricing-details li {
+            margin: 10px 0px 15px 0px;
+            font-size: 1.2em;
+            color: #555555;
+        }
+
+        .price { 
+            color: #B22222;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+        
+        #table-section {
+            margin: 10px 40px 50px 40px;
+        }
+
+        #table-section-header {
+            color: #333333;
+            text-align: center;
+            text-transform: uppercase;
+            font-style: italic;
+            margin-top: 60px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            text-align: left;
+            padding: 20px 20px 20px 20px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        .table-price {
+            text-align: center;
+        }
+
+        .service-table-row:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .pricing-section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+    <!-- NAV BAR -->
+    <nav>
+        <div class="logo"><a href="index.html"><img id="logo-top-left" src="./images/logo.png" alt="logo MedicalAs" width="120"></a></div>
+        <button class="mobile-menu-button">&#9776; Meniu</button>
+        <ul class="nav-links">
+            <a href="index.html"><li>Acasă</li></a>
+            <a href="services.html"><li>Servicii</li></a>
+            <a href="preturi.html"><li>Prețuri</li></a>
+            <a href="blog.html"><li>Blog</li></a>
+            <a href="contact.html" id="contact"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    <!-- PRICING SECTION -->
+    <h2 id="pricing-section-header">Fiecare pachet poate fi personalizat in funcție de nevoile pacientului!</h2>
+    <section class="pricing-section">
+        <div class="pricing-package" id="package1">
+            <div class="package-content">
+                <h2>Pachet 1</h2>
+                <ul class="pricing-details">
+                    <li>Durată: 2 ore / zi</li>
+                    <li>Perioada: 3 zile / săptămână</li>
+                    <li><span class="price">Preț: 1700 lei</span></li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="pricing-package" id="package2">
+            <div class="package-content">
+                <h2>Pachet 2</h2>
+                <ul class="pricing-details">
+                    <li>Durată: 2 ore / zi</li>
+                    <li>Perioada:  5 zile / săptămână</li>
+                    <li><span class="price">Preț: 2000 lei</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pricing-package" id="package3">
+            <div class="package-content">
+                <h2>Pachet 3</h2>
+                <ul class="pricing-details">
+                    <li>Durată: 2 ore / zi</li>
+                    <li>Perioada: 7 zile / săptămână</li>
+                    <li><span class="price">Preț: 2400 lei</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pricing-package" id="package4">
+            <div class="package-content">
+                <h2>Pachet 4</h2>
+                <ul class="pricing-details">
+                    <li>Durată: 6 ore / zi</li>
+                    <li>Perioada: 5 zile / săptămână</li>
+                    <li><span class="price">Preț: 3600 lei</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="pricing-package" id="package5">
+            <div class="package-content">
+                <h2>Pachet 5</h2>
+                <ul class="pricing-details">
+                    <li>Durată: 12 ore / zi</li>
+                    <li>Perioada: 5 zile / săptămână</li>
+                    <li ><span class="price">Preț: 5500 lei</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABLE SECTION -->
+    <section id="table-section">
+    <h2 id="table-section-header">Listă de prețuri pentru manevrele medicale</h2>
+    
+    <table>
+        <tr>
+            <th>SERVICIU</th>
+            <th class="table-price">PREȚ (RON)</span>
+        </tr>
+        <tr class="service-table-row">
+            <td>Administrarea tratamentului injectabil intravenous</td>
+            <td class="table-price">90</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Administrarea tratamentului injectabil intramuscular</td>
+            <td class="table-price">90</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Administrarea tratamentului injectabil intradermic</td>
+            <td class="table-price">90</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Administrarea tratamentului injectabil subcutanat</td>
+            <td class="table-price">90</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Testare sensibilitate antibiotic</td>
+            <td class="table-price">90</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Administrare vaccinuri</td>
+            <td class="table-price">100</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Montare sondă urinară</td>
+            <td class="table-price">250</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Verificare sondă urinară</td>
+            <td class="table-price">150</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Extragere sondă urinară</td>
+            <td class="table-price">150</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Spălatură vezicala</td>
+            <td class="table-price">200</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Manoperă tratament/pansament escară (prima vizită)</td>
+            <td class="table-price">300</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Manopera tratament/pansament escară (ulterior)</td>
+            <td class="table-price">200</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Scoaterea firelor postoperatorii</td>
+            <td class="table-price">170</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Schimbare pansament postoperator</td>
+            <td class="table-price">150</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Pansament plagă infectată</td>
+            <td class="table-price">200</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Spalatură auriculară, o ureche</td>
+            <td class="table-price">200</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Prindere linie venoasă (branulă)</td>
+            <td class="table-price">50</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Administrare perfuzie 250 ml</td>
+            <td class="table-price">200</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Administrare perfuzie 500 ml</td>
+            <td class="table-price">300</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Clisma in scop evacuator</td>
+            <td class="table-price">240</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Tușeu rectal cu evacuare</td>
+            <td class="table-price">200</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Administrare microclismă</td>
+            <td class="table-price">130</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Monitorizare funcții vitale</td>
+            <td class="table-price">180</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Organizarea medicației orale</td>
+            <td class="table-price">100</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Pachet monitorizare funcții vitale + glicemie + organe medicale</td>
+            <td class="table-price">240</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Toaletare parțială</td>
+            <td class="table-price">150</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Toaletare completă</td>
+            <td class="table-price">200</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Recoltare probe sânge</td>
+            <td class="table-price">150</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Recoltare exudat faringian, axilar, rectal etc</td>
+            <td class="table-price">100</td>
+        </tr>
+        <tr class="service-table-row">
+            <td>Recoltare probe sânge + probe urină</td>
+            <td class="table-price">270</td>
+        </tr>
+    </table>
+    </section>
+
+    <!-- RESERVATION SECTION -->
+    <section class="reservation">
+        <div class="reservation-container">
+            <h2>Rezervați acum pentru serviciile noastre de înaltă calitate!</h2>
+            <p>Sună la numărul nostru de telefon pentru a programa o consultație sau pentru orice întrebare legată de serviciile noastre de îngrijire medicală.</p>
+            <div class="button-container">
+                <a href="tel:+40730029288" class="reservation-button">
+                    <span class="primary-text">Sunați acum</span>
+                    <span class="secondary-text">+40730029288</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-section-contact">
+                <h3>Contact</h3>
+                <p>Adresă: Str. George Enescu nr.34, Ap.1, Sector 1</p>
+                <p>Telefon: <a href="tel:+40730029288" class="contact-button">+40730029288</a></p>
+                <p>Email: <a href="mailto:office@medicalas.ro">office@medicalas.ro</a></p>
+                <a href="https://www.facebook.com/people/TERRA-Medical-As/100088809708240/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+                    <defs>
+                      <linearGradient id="fbGradient" x1="50%" y1="0%" x2="50%" y2="100%">
+                        <stop offset="0%" style="stop-color:#39579A;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#1877f2;stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M22 2H2a2 2 0 0 0-2 2v18a2 2 0 0 0 2 2h11.31v-7.01h-3V9.76h3V7.34c0-3.14 1.91-4.84 4.7-4.84 1.33 0 2.47.1 2.8.15v3h-1.92c-1.5 0-1.79.71-1.79 1.76v2.3h3.59l-.47 3.54h-3.11V22H22a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" fill="url(#fbGradient)"/>
+                  </svg>
+                </a>
+                  
+                
+            </div>
+
+            <div class="footer-section-servicii">
+                <h3>Servicii</h3>
+                <ul class="footer-links">
+                    <li><a href="perfuzie-intravenoasa.html">Perfuzie intravenoasă</a></li>
+                    <li><a href="ingrijirea-escarelor.html">Îngrijirea escarelor</a></li>
+                    <li><a href="recoltarea-analizelor-de-sange.html">Recoltarea analizelor de sânge</a></li>
+                    <li><a href="administrarea-medicamentelor.html">Administrarea medicamentelor</a></li>
+                    <li><a href="masaj.html">Masaj</a></li>
+                    <li><a href="psihoterapie.html">Psihoterapie</a></li>
+                    <li><a href="pansamentul-plagilor.html">Pansamentul plăgilor</a></li>
+                    <li><a href="ingrijirea-stomelor.html">Îngrijirea stomelor</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>Terra MedicalAs srl &copy; 2022. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
